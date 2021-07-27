@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import MoviesList from '../components/MoviesList';
+import MoreReleases from '../components/MoreReleases';
+import './UpcomingMovies.css';
 
 const UpcomingMovies = () => {
 
@@ -32,11 +34,12 @@ const UpcomingMovies = () => {
       
     )
     return (
-        <>
+        <div className='upcoming_movies'>
         <h2>Upcoming Film Releases for UK</h2>
         <MoviesList movies = {movies}/>
-        </>
-    )
+        <MoreReleases />
+        </div>
+    );
 
 }
 
